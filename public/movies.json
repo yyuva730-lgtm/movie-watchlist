@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "title": "Mankatha",
+    "genre": "Action",
+    "year": 2011,
+    "rating": 7.7,
+    "image": "https://i.pinimg.com/1200x/4c/ed/96/4ced960fd5d2920edf8130aa1907f855.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Master",
+    "genre": "Action",
+    "year": 2021,
+    "rating": 8.5,
+    "image": "https://i.pinimg.com/1200x/eb/d9/c0/ebd9c0f78f28e9981eec42e941736a9b.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Naanum Rowdydhaan",
+    "genre": "Comedy",
+    "year": 2015,
+    "rating": 7.8,
+    "image": "https://i.pinimg.com/736x/0a/f9/b9/0af9b98b2cfc21959a9a6291961a1c1a.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Idhayam Murali",
+    "genre": "Drama",
+    "year": 2026,
+    "rating": 7.1,
+    "image": "https://i.pinimg.com/736x/a2/b5/92/a2b5927a3768dd6b71bfbdf10ac013cf.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Lubbar Bandhu",
+    "genre": "Drama",
+    "year": 2024,
+    "rating": 8.6,
+    "image": "https://i.pinimg.com/1200x/27/8c/e1/278ce12a5b76e7b224821dc37d4dccaa.jpg"
+  },
+  {
+    "id": 6,
+    "title": "The Matrix",
+    "genre": "Sci-Fi",
+    "year": 1999,
+    "rating": 8.7,
+    "image": "https://i.pinimg.com/1200x/76/c5/ae/76c5ae874f6ade35a8d690ee4f36164a.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Avengers: Endgame",
+    "genre": "Action",
+    "year": 2019,
+    "rating": 8.4,
+    "image": "https://i.pinimg.com/1200x/35/17/68/3517685b72d7fb1eeca5af386de190e1.jpg"
+  },
+  {
+    "id": 8,
+    "title": "The Grand Budapest Hotel",
+    "genre": "Comedy",
+    "year": 2014,
+    "rating": 8.1,
+    "image": "https://i.pinimg.com/736x/f0/84/c9/f084c9440d1b6cb84c68664b95c5c82e.jpg"
+  },
+  {
+    "id": 9,
+    "title": "The Shawshank Redemption",
+    "genre": "Drama",
+    "year": 1994,
+    "rating": 9.3,
+    "image": "https://i.pinimg.com/1200x/ec/3d/52/ec3d52daa56bd9c2abf0d82952d3b8ad.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Spider-Man: No Way Home",
+    "genre": "Action",
+    "year": 2021,
+    "rating": 8.2,
+    "image": "https://i.pinimg.com/736x/d5/2c/4d/d52c4d0cfe65fcae678d70d4a531657a.jpg"
+  }
+]

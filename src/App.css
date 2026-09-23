@@ -1,0 +1,309 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+/* Header */
+
+.header {
+  background: #111827;
+  color: white;
+  padding: 45px 20px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+.header p {
+  color: #d1d5db;
+  font-size: 17px;
+}
+
+/* Main container */
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+/* Filter */
+
+.filter-section {
+  margin-bottom: 30px;
+}
+
+.filter-section h2 {
+  margin-bottom: 18px;
+}
+
+.genre-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.genre-btn {
+  border: 1px solid #d1d5db;
+  background: white;
+  color: #374151;
+  padding: 10px 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+.genre-btn:hover {
+  background: #e5e7eb;
+}
+
+.genre-btn.active {
+  background: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
+
+/* Movie Grid */
+
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* Movie Card */
+
+.movie-card {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.movie-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.movie-icon {
+  font-size: 55px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.movie-content h3 {
+  font-size: 21px;
+  margin-bottom: 15px;
+}
+
+.movie-content p {
+  margin: 8px 0;
+  color: #555;
+}
+
+/* Add Button */
+
+.add-btn,
+.added-btn {
+  width: 100%;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 15px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.add-btn {
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background: #1d4ed8;
+}
+
+.added-btn {
+  background: #16a34a;
+  color: white;
+  cursor: not-allowed;
+}
+
+/* Loading */
+
+.loading {
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.spinner {
+  width: 45px;
+  height: 45px;
+  border: 5px solid #ddd;
+  border-top: 5px solid #2563eb;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 15px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* No Movies */
+
+.no-movies {
+  text-align: center;
+  background: white;
+  padding: 60px 20px;
+  border-radius: 15px;
+}
+
+.no-movies-icon {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.no-movies h2 {
+  margin-bottom: 10px;
+}
+
+.no-movies p {
+  color: #666;
+}
+
+/* Watchlist */
+
+.watchlist-section {
+  margin-top: 50px;
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+.watchlist-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.watchlist-count {
+  background: #2563eb;
+  color: white;
+  min-width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.watchlist-items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.watchlist-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 18px;
+  background: #f8fafc;
+  border-radius: 10px;
+}
+
+.watchlist-item h3 {
+  margin-bottom: 6px;
+}
+
+.watchlist-item p {
+  color: #666;
+}
+
+.remove-btn {
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 9px 15px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background: #b91c1c;
+}
+
+/* Empty Watchlist */
+
+.empty-watchlist {
+  text-align: center;
+  padding: 35px;
+  color: #666;
+}
+
+.empty-icon {
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .movies-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .movies-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header h1 {
+    font-size: 30px;
+  }
+
+  .container {
+    width: 94%;
+  }
+
+  .watchlist-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .remove-btn {
+    width: 100%;
+  }
+}
+.movie-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
